@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  frontend:
+    image: abhichauhan01/reactfrontend
+    ports:
+      - "3000:3000"
+
+  backend:
+    image: abhichauhan01/springbackend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/courseapi
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=1234
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: courseapi
+    ports:
+      - "3307:3306" 

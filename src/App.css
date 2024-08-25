@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h2 {
+  color: #333;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.MuiTableCell-head {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.MuiTableCell-body {
+  font-size: 14px;
+}
+
+.MuiButton-root {
+  margin-top: 20px;
+}
